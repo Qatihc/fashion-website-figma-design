@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, html {
+  --pink: #FFE0E5;
+  --red: #F53855;
+  --black: #000;
+  --white: #fff;
+  --gray: #8a8a8a;
+  background-color: #FFE0E5;
+}
+
+.page-container {
+  position: relative;
+  width: 65%;
+  margin: 0 auto;
+  padding: 0 6rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pink);
+}
+
+.elipse {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 10vw;
+}
+
+.navbar {
+  display: flex;
+  height: 120px;
+  grid-row: 1;
+  justify-content: space-between;
+  align-items: center;
+  .navbar-links {
+    display: flex;
+    align-items: baseline;
+    gap: 5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .btn-shop {
+    border: none;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    color: var(--white);
+    height: 3rem;
+    width: 12rem;
+    border-radius: 30px;
+    margin-left: 35px;
+    font-weight: 700;
+    background-color: var(--red);
+    z-index: 2;
+  }
+}
+
+.logo-container {
+  height: 50px;
+  .logo {
+    height: 100%;
+  }
+  .brand {
+    color: var(--red);
+    display: inline-block;
+    line-height: .9;
+    font-family: 'Aladin', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: min-content;
+    height: 100%
+  }
+}
+
+.model-img-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.main-container {
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: 4fr 3fr;
+  height: 70vh;
+  gap: 5rem;
+  align-items: end;
+}
+
+.model {
+  width: 50%;
+}
+
+.right-model {
+  height: 100%;
+}
+
+.right-model::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  background-image: url('./assets/img_1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.left-model {
+  height: 100%;
+}
+
+.left-model::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  background-image: url('./assets/img_2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.test {
+  height: fit-content;
+}
+
+.text-container {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  width: 300px;
+  flex-grow: 1;
+  .new-arrivals {
+    font-size: 1.5rem;
+    color: var(--red);
+  }
+  .title {
+    font-size: 8rem;
+    text-align: center;
+    line-height: 1;
+    height: min-content;
+  }
+  .you {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Aladin', cursive;
+    font-size: 5rem;
+    color: var(--red);
+    margin-left: 30%;
+  }
+}
+
+.sale-box {
+  display: flex;
+  height: 100px;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: var(--white);
+  .black-side {
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    line-height: 1.5;
+    p {
+      margin: auto;
+      text-align: center;
+      width: 90%;
+    }
+    .for-online {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .order {
+      font-size: 24px;
+    }
+  }
+  .red-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: var(--red);
+    p {
+      margin: 0 auto;
+      width: min-content;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.disclaimer {
+  color: var(--gray);
+  height: fit-content;
+  .red {
+    font-weight: 700;
+    color: var(--red);
+  }
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  height: fit-content;
+}
+
+.icon-container {
+  background-color: var(--red);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 15px;
+  }
+}
